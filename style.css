@@ -27,7 +27,7 @@ body {
     letter-spacing: 2px;
     line-height: 17px;
     outline: none;
-    padding: 0 40px;
+    padding: 0 10px;
     background: rgb(53, 56, 56);
     color: white;
     font-size: 1.5rem;
@@ -75,6 +75,6 @@ body {
         }
         100% {
             background: white;
-            color: black;
+            color:rgb(53, 56, 56);
         }
     }
