@@ -1,0 +1,80 @@
+
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+
+    background: rgb(53, 56, 56);
+}
+
+.cyber-button {
+    position: absolute;
+    top: 3px; /* equal to border thickness */
+    left: 3px; 
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Orbitron', cursive;
+    height: 40px;
+    width: 160px;
+    letter-spacing: 2px;
+    line-height: 17px;
+    outline: none;
+    padding: 0 40px;
+    background: rgb(53, 56, 56);
+    color: white;
+    font-size: 1.5rem;
+    clip-path: polygon(0% 0%,  100% 0%, 100% 70%, 90% 100%, 0% 100%); 
+  
+}
+
+.cyber-button-border {
+    display: inline-block;
+    position: relative;
+    width: 166px;
+    height: 46px;
+    background: white;
+    clip-path: polygon(0% 0%,  100% 0%, 100% 70%, 90% 100%, 0% 100%); 
+
+}
+
+.cyber-button-border:hover {
+    animation: flash .2s;
+    animation-iteration-count: 3;
+    
+}
+
+.cyber-button:hover {
+    animation: background-change .9s .6s forwards;
+   
+    
+}
+
+@keyframes flash {
+    
+    50%{
+        background: rgb(142, 153, 153);
+    }
+   
+    100% {
+        background: white;
+    }
+}
+
+    @keyframes background-change {
+
+        0% {
+            background: rgb(142, 153, 153);
+        }
+        100% {
+            background: white;
+            color: black;
+        }
+    }
